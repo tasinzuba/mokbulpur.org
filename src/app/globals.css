@@ -73,19 +73,8 @@
   100% { background-position: 200% 0; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #06121c;
-    --foreground: #f0f9ff;
-    --muted: #94a3b8;
-    --muted-bg: rgb(72 202 228 / 0.06);
-    --border: rgb(72 202 228 / 0.18);
-    --card: #0b1c2a;
-    --primary-soft: rgb(72 202 228 / 0.15);
-  }
-}
-
 html {
+  color-scheme: light;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
