@@ -13,7 +13,7 @@ export function Card({
   return (
     <div
       className={cn(
-        "rounded-2xl border border-border/70 bg-card p-6 shadow-[var(--shadow-soft)] transition-all duration-300 ease-out",
+        "rounded-2xl border border-border/70 bg-card p-5 shadow-[var(--shadow-soft)] transition-all duration-300 ease-out sm:p-6",
         hover &&
           "hover:-translate-y-0.5 hover:border-border hover:shadow-[var(--shadow-card)]",
         className,
@@ -51,11 +51,11 @@ export function SectionHeader({
           {eyebrow}
         </div>
       )}
-      <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
+      <h2 className="text-balance text-[1.75rem] font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+        <p className="mt-3 text-balance text-base leading-relaxed text-muted sm:mt-4 sm:text-lg">
           {subtitle}
         </p>
       )}

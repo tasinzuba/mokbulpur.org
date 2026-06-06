@@ -8,9 +8,9 @@ export async function Transparency() {
   const t = await getTranslations("landing.transparency");
 
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-12 sm:py-20 lg:py-28">
       <Container>
-        <div className="relative isolate overflow-hidden rounded-[2rem] border border-[#48cae4]/30 bg-gradient-to-br from-[#48cae4] via-[#0284c7] to-[#075985] p-10 shadow-[var(--shadow-brand)] sm:p-14 lg:p-20">
+        <div className="relative isolate overflow-hidden rounded-[2rem] border border-[#48cae4]/30 bg-gradient-to-br from-[#48cae4] via-[#0284c7] to-[#075985] p-7 shadow-[var(--shadow-brand)] sm:p-12 lg:p-20">
           <div className="absolute inset-0 -z-10 bg-grid opacity-[0.10]" />
           <div className="absolute -right-32 -top-32 -z-10 h-96 w-96 rounded-full bg-white/15 blur-3xl" />
           <div className="absolute -bottom-40 -left-20 -z-10 h-96 w-96 rounded-full bg-[#22d3ee]/20 blur-3xl" />

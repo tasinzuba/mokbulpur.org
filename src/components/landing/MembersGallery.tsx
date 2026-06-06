@@ -14,7 +14,7 @@ export async function MembersGallery() {
   const members = await getActiveMembers();
 
   return (
-    <section className="py-16 sm:py-20">
+    <section className="py-12 sm:py-16 lg:py-20">
       <Container>
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
           <SectionHeader

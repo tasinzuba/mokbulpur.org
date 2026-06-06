@@ -34,7 +34,7 @@ export async function WhatWeDo() {
   ];
 
   return (
-    <section className="relative py-16 sm:py-24">
+    <section className="relative py-12 sm:py-16 lg:py-24">
       <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-[#48cae4]/30 to-transparent" />
       <Container>
         <SectionHeader
@@ -48,7 +48,7 @@ export async function WhatWeDo() {
           {items.map(({ title, body, Icon, span }) => (
             <div
               key={title}
-              className={`group relative overflow-hidden rounded-3xl border border-border bg-card p-7 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:border-[#48cae4]/40 hover:shadow-[var(--shadow-card)] ${span}`}
+              className={`group relative overflow-hidden rounded-3xl border border-border bg-card p-5 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:border-[#48cae4]/40 hover:shadow-[var(--shadow-card)] sm:p-7 ${span}`}
             >
               <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#48cae4]/10 via-white to-transparent opacity-60" />
               <div className="absolute -right-12 -top-12 -z-10 h-44 w-44 rounded-full bg-[#48cae4]/10 blur-2xl transition-opacity duration-500 group-hover:opacity-150" />

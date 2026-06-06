@@ -27,12 +27,12 @@ export async function Hero() {
       <div className="absolute -left-40 top-10 -z-10 h-[28rem] w-[28rem] rounded-full bg-[#48cae4]/25 blur-[140px]" />
       <div className="absolute -right-32 bottom-0 -z-10 h-96 w-96 rounded-full bg-[#22d3ee]/18 blur-[120px]" />
 
-      <Container className="relative py-16 sm:py-20 lg:py-28">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <Container className="relative py-10 sm:py-16 lg:py-24">
+        <div className="grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
           {/* LEFT: Text + CTAs */}
           <div className="order-2 text-center lg:order-1 lg:text-left">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#48cae4]/30 bg-white/70 px-4 py-1.5 text-sm font-medium text-[#0284c7] shadow-sm backdrop-blur-md">
-              <Sparkles className="h-3.5 w-3.5 text-[#0284c7]" />
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#48cae4]/30 bg-white/70 px-3 py-1 text-xs font-medium text-[#0284c7] shadow-sm backdrop-blur-md sm:px-4 sm:py-1.5 sm:text-sm">
+              <Sparkles className="h-3 w-3 text-[#0284c7] sm:h-3.5 sm:w-3.5" />
               <span>{tCommon("orgName")}</span>
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#48cae4] opacity-75" />
@@ -40,22 +40,29 @@ export async function Hero() {
               </span>
             </div>
 
-            <h1 className="text-balance text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
+            <h1 className="text-balance text-3xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
               <span className="text-gradient">{t("title")}</span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-xl text-balance text-lg leading-relaxed text-muted sm:text-xl lg:mx-0">
+            <p className="mx-auto mt-4 max-w-xl text-balance text-base leading-relaxed text-muted sm:mt-6 sm:text-lg lg:mx-0 lg:text-xl">
               {t("subtitle")}
             </p>
 
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
-              <Link href="/sheet" className={buttonStyles({ size: "lg" })}>
+            <div className="mt-7 flex flex-col items-stretch justify-center gap-3 sm:mt-8 sm:flex-row sm:items-center lg:justify-start">
+              <Link
+                href="/sheet"
+                className={buttonStyles({ size: "lg", className: "w-full sm:w-auto" })}
+              >
                 {t("ctaPrimary")}
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <Link
                 href="/#how-to-pay"
-                className={buttonStyles({ variant: "secondary", size: "lg" })}
+                className={buttonStyles({
+                  variant: "secondary",
+                  size: "lg",
+                  className: "w-full sm:w-auto",
+                })}
               >
                 <HandCoins className="h-5 w-5" />
                 {t("ctaSecondary")}

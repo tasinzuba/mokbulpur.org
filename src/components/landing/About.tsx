@@ -6,7 +6,7 @@ export async function About() {
   const t = await getTranslations("landing.about");
 
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <Container>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">

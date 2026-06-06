@@ -46,7 +46,7 @@ export async function LiveStats() {
   ];
 
   return (
-    <section className="relative py-16 sm:py-24">
+    <section className="relative py-12 sm:py-16 lg:py-24">
       <Container>
         <div className="mb-12 flex items-end justify-between gap-6">
           <SectionHeader eyebrow={t("title")} title={t("title")} />

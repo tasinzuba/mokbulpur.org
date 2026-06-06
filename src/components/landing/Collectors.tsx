@@ -12,7 +12,7 @@ export async function Collectors() {
   const t = await getTranslations("landing.collectors");
 
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-12 sm:py-16 lg:py-24">
       <Container>
         <SectionHeader
           eyebrow={t("title")}

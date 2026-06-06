@@ -40,7 +40,7 @@ export async function HowToPay() {
   return (
     <section
       id="how-to-pay"
-      className="relative overflow-hidden py-16 sm:py-24"
+      className="relative overflow-hidden py-12 sm:py-16 lg:py-24"
     >
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#e0f7fa]/30 via-white to-white" />
 
