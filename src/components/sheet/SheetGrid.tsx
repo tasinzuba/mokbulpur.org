@@ -241,27 +241,27 @@ function Legend() {
     {
       key: "paid",
       label: t("legendPaid"),
-      tone: "bg-emerald-100 text-emerald-700 dark:bg-emerald-950/40",
+      tone: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-200",
     },
     {
       key: "paid-late",
       label: t("legendPaidLate"),
-      tone: "bg-emerald-100/70 text-emerald-700 ring-1 ring-amber-400/40 dark:bg-emerald-950/40",
+      tone: "bg-emerald-100 text-emerald-800 ring-1 ring-amber-400/60",
     },
     {
       key: "pending",
       label: t("legendPending"),
-      tone: "bg-amber-100 text-amber-700 dark:bg-amber-950/40",
+      tone: "bg-amber-100 text-amber-800 ring-1 ring-amber-200",
     },
     {
       key: "late",
       label: t("legendLate"),
-      tone: "bg-rose-100 text-rose-700 dark:bg-rose-950/40",
+      tone: "bg-rose-100 text-rose-800 ring-1 ring-rose-200",
     },
     {
       key: "future",
       label: t("legendFuture"),
-      tone: "bg-muted-bg text-muted",
+      tone: "bg-stone-100 text-stone-600 ring-1 ring-stone-200",
     },
   ];
   return (
@@ -309,13 +309,13 @@ function Cell({
         onClick={onClick}
         className={cn(
           base,
-          "bg-emerald-50 text-emerald-700 hover:scale-[1.04] hover:bg-emerald-100 dark:bg-emerald-950/40 dark:text-emerald-300",
-          status === "paid-late" && "ring-1 ring-amber-400/60",
+          "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-200 hover:scale-[1.04] hover:bg-emerald-200",
+          status === "paid-late" && "ring-amber-400/70",
         )}
         aria-label="View payment details"
       >
         <Check className="h-4 w-4" />
-        <span className="mt-0.5 text-[10px] font-medium tabular-nums">
+        <span className="mt-0.5 text-[10px] font-semibold tabular-nums">
           {payment ? formatBDT(payment.amount + payment.fine_amount, locale) : ""}
         </span>
       </button>
@@ -328,7 +328,7 @@ function Cell({
         onClick={onClick}
         className={cn(
           base,
-          "bg-amber-50 text-amber-700 hover:scale-[1.04] hover:bg-amber-100 dark:bg-amber-950/40 dark:text-amber-300",
+          "bg-amber-100 text-amber-800 ring-1 ring-amber-200 hover:scale-[1.04] hover:bg-amber-200",
         )}
       >
         <Clock className="h-4 w-4" />
@@ -342,7 +342,7 @@ function Cell({
         onClick={onClick}
         className={cn(
           base,
-          "bg-rose-50 text-rose-700 hover:scale-[1.04] hover:bg-rose-100 dark:bg-rose-950/40 dark:text-rose-300",
+          "bg-rose-100 text-rose-800 ring-1 ring-rose-200 hover:scale-[1.04] hover:bg-rose-200",
         )}
       >
         <AlertCircle className="h-4 w-4" />
