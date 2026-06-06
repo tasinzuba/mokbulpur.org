@@ -63,10 +63,10 @@ export async function LiveStats() {
           {cards.map(({ label, value, Icon, glow, iconBg }) => (
             <div
               key={label}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:border-[#48cae4]/40 hover:shadow-[var(--shadow-card)]"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-white via-white to-[#48cae4]/8 p-6 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:border-[#48cae4]/40 hover:shadow-[var(--shadow-card)]"
             >
               <div
-                className={`absolute inset-0 -z-10 bg-gradient-to-br opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${glow}`}
+                className={`absolute -right-12 -top-12 -z-10 h-40 w-40 rounded-full bg-gradient-to-br ${glow} blur-2xl transition-opacity duration-300 opacity-60 group-hover:opacity-100`}
               />
               <div
                 className={`grid h-12 w-12 place-items-center rounded-xl ${iconBg}`}
