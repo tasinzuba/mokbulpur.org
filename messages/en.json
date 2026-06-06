@@ -39,16 +39,17 @@
       "members": "Active Members"
     },
     "whatWeDo": {
-      "title": "How We Use the Fund",
-      "subtitle": "Money goes only where the community decides together. Every spend is publicly traceable.",
-      "mosqueTitle": "Mosque Support",
-      "mosqueBody": "Maintenance, repairs, and the Imam's stipend.",
-      "graveyardTitle": "Graveyard Care",
-      "graveyardBody": "Upkeep of our village graveyard.",
-      "needyTitle": "Help for the Needy",
-      "needyBody": "Emergency support for families in hardship.",
-      "roadTitle": "Roads & Infrastructure",
-      "roadBody": "Road repair, drainage, and public works."
+      "eyebrow": "✦ Why Save",
+      "title": "Why Saving Together Matters",
+      "subtitle": "Pooled monthly contributions build resilience, community trust, and a fund ready for whatever comes.",
+      "securityTitle": "Secure Future",
+      "securityBody": "A safety net for emergencies — illness, calamity, or family hardship. No member stands alone when life turns hard.",
+      "collectiveTitle": "Collective Strength",
+      "collectiveBody": "Twenty hands together can build what one alone cannot — a fund that reflects our shared commitment to home.",
+      "growthTitle": "Long-Term Growth",
+      "growthBody": "Small monthly contributions compound into something significant — ready for the next ten years, twenty years, and beyond.",
+      "transparencyTitle": "Full Transparency",
+      "transparencyBody": "Every contribution and every disbursement is recorded — visible to all members, all the time."
     },
     "collectors": {
       "title": "Our Collectors",

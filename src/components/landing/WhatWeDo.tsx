@@ -1,34 +1,34 @@
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/Card";
-import { Building2, Trees, HeartHandshake, Route } from "lucide-react";
+import { Shield, Handshake, TrendingUp, Eye } from "lucide-react";
 
 export async function WhatWeDo() {
   const t = await getTranslations("landing.whatWeDo");
 
   const items = [
     {
-      title: t("mosqueTitle"),
-      body: t("mosqueBody"),
-      Icon: Building2,
+      title: t("securityTitle"),
+      body: t("securityBody"),
+      Icon: Shield,
       span: "sm:col-span-2 lg:col-span-2",
     },
     {
-      title: t("graveyardTitle"),
-      body: t("graveyardBody"),
-      Icon: Trees,
+      title: t("collectiveTitle"),
+      body: t("collectiveBody"),
+      Icon: Handshake,
       span: "",
     },
     {
-      title: t("needyTitle"),
-      body: t("needyBody"),
-      Icon: HeartHandshake,
+      title: t("growthTitle"),
+      body: t("growthBody"),
+      Icon: TrendingUp,
       span: "",
     },
     {
-      title: t("roadTitle"),
-      body: t("roadBody"),
-      Icon: Route,
+      title: t("transparencyTitle"),
+      body: t("transparencyBody"),
+      Icon: Eye,
       span: "sm:col-span-2 lg:col-span-2",
     },
   ];
@@ -38,7 +38,7 @@ export async function WhatWeDo() {
       <div className="absolute inset-x-0 top-0 -z-10 h-px bg-gradient-to-r from-transparent via-[#48cae4]/30 to-transparent" />
       <Container>
         <SectionHeader
-          eyebrow="✦ Impact"
+          eyebrow={t("eyebrow")}
           title={t("title")}
           subtitle={t("subtitle")}
           align="center"
