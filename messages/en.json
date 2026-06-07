@@ -17,7 +17,7 @@
     "members": "Members",
     "payments": "Payments",
     "expenses": "Expenses",
-    "collectors": "Collectors",
+    "collectors": "Cashiers",
     "admin": "Admin",
     "rules": "Rules & Policies"
   },
@@ -54,9 +54,9 @@
       "transparencyBody": "Every contribution and every disbursement is recorded — visible to all members, all the time."
     },
     "collectors": {
-      "title": "Our Collectors",
+      "title": "Our Cashiers",
       "subtitle": "Two trusted members collect monthly savings and report to admin.",
-      "collectorLabel": "Collector"
+      "collectorLabel": "Cashier"
     },
     "members": {
       "title": "Our Members",
@@ -111,7 +111,7 @@
     "category": "Category",
     "amount": "Amount (BDT)",
     "expenseDate": "Date",
-    "paidFromCollector": "Paid from (which collector held the money)",
+    "paidFromCollector": "Paid from (which cashier held the money)",
     "noCollector": "Not specified",
     "receiptUrl": "Receipt photo URL (optional)",
     "receiptHint": "Upload to Imgur/Drive and paste the direct image link.",
@@ -134,7 +134,7 @@
     "viewAllExpenses": "All expenses"
   },
   "collectorsPage": {
-    "title": "Our Collectors",
+    "title": "Our Cashiers",
     "subtitle": "Two trusted members who receive every contribution.",
     "balance": "Current balance",
     "totalCollected": "Total collected",
@@ -183,7 +183,7 @@
     "colAmount": "Amount",
     "colMethod": "Method",
     "colTxnId": "Txn ID",
-    "colCollector": "Collector",
+    "colCollector": "Cashier",
     "colStatus": "Status",
     "approved": "Approved",
     "noTxnId": "—",
@@ -197,7 +197,7 @@
     "subtitle": "Record a member's monthly savings deposit.",
     "member": "Member",
     "memberPlaceholder": "Select a member",
-    "collector": "Received by (Collector)",
+    "collector": "Received by (Cashier)",
     "collectorPlaceholder": "Select a collector",
     "amount": "Amount (BDT)",
     "fineAmount": "Fine amount (BDT, if any)",
@@ -213,7 +213,7 @@
     "cancel": "Cancel",
     "errorMissing": "Please fill in all required fields",
     "errorNoMembers": "No members exist. Add members first.",
-    "errorNoCollectors": "No collectors exist. Seed the schema first.",
+    "errorNoCollectors": "No cashiers exist. Seed the schema first.",
     "errorDuplicate": "This member already has a payment for that month."
   },
   "rules": {
@@ -342,7 +342,7 @@
       "colMember": "Member",
       "colStatus": "Status",
       "colDate": "Date paid",
-      "colCollector": "Collector",
+      "colCollector": "Cashier",
       "colAmount": "Amount",
       "colMethod": "Method",
       "colTxnId": "Txn ID",
@@ -406,7 +406,7 @@
     "fine": "Fine",
     "paidOn": "Paid on",
     "method": "Method",
-    "collector": "Collector",
+    "collector": "Cashier",
     "note": "Note",
     "daysLate": "{days} days late",
     "joiningPayment": "Joining payment",
