@@ -29,8 +29,8 @@ export async function Hero() {
 
       <Container className="relative py-10 sm:py-16 lg:py-24">
         <div className="grid items-center gap-8 sm:gap-10 lg:grid-cols-2 lg:gap-16">
-          {/* LEFT: Text + CTAs */}
-          <div className="order-2 text-center lg:order-1 lg:text-left">
+          {/* TEXT — first on mobile, left column on desktop */}
+          <div className="text-center lg:text-left">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#48cae4]/30 bg-white/70 px-3 py-1 text-xs font-medium text-[#0284c7] shadow-sm backdrop-blur-md sm:px-4 sm:py-1.5 sm:text-sm">
               <Sparkles className="h-3 w-3 text-[#0284c7] sm:h-3.5 sm:w-3.5" />
               <span>{tCommon("orgName")}</span>
@@ -48,30 +48,17 @@ export async function Hero() {
               {t("subtitle")}
             </p>
 
-            <div className="mt-7 flex flex-col items-stretch justify-center gap-3 sm:mt-8 sm:flex-row sm:items-center lg:justify-start">
-              <Link
-                href="/sheet"
-                className={buttonStyles({ size: "lg", className: "w-full sm:w-auto" })}
-              >
-                {t("ctaPrimary")}
-                <ArrowRight className="h-5 w-5" />
-              </Link>
-              <Link
-                href="/#how-to-pay"
-                className={buttonStyles({
-                  variant: "secondary",
-                  size: "lg",
-                  className: "w-full sm:w-auto",
-                })}
-              >
-                <HandCoins className="h-5 w-5" />
-                {t("ctaSecondary")}
-              </Link>
+            {/* Desktop CTAs — sit with the text on lg+ */}
+            <div className="mt-8 hidden flex-row items-center justify-start gap-3 lg:flex">
+              <CtaButtons
+                primaryLabel={t("ctaPrimary")}
+                secondaryLabel={t("ctaSecondary")}
+              />
             </div>
           </div>
 
-          {/* RIGHT: Image */}
-          <div className="order-1 lg:order-2">
+          {/* IMAGE — second on mobile, right column on desktop */}
+          <div>
             <div className="relative mx-auto aspect-[4/3] w-full max-w-xl lg:max-w-none">
               <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-[#48cae4]/30 via-transparent to-[#0284c7]/20 blur-2xl" />
               {hasHero ? (
@@ -96,9 +83,48 @@ export async function Hero() {
               )}
             </div>
           </div>
+
+          {/* MOBILE CTAs — third on mobile, hidden on desktop */}
+          <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center lg:hidden">
+            <CtaButtons
+              primaryLabel={t("ctaPrimary")}
+              secondaryLabel={t("ctaSecondary")}
+            />
+          </div>
         </div>
       </Container>
     </section>
+  );
+}
+
+function CtaButtons({
+  primaryLabel,
+  secondaryLabel,
+}: {
+  primaryLabel: string;
+  secondaryLabel: string;
+}) {
+  return (
+    <>
+      <Link
+        href="/sheet"
+        className={buttonStyles({ size: "lg", className: "w-full sm:w-auto" })}
+      >
+        {primaryLabel}
+        <ArrowRight className="h-5 w-5" />
+      </Link>
+      <Link
+        href="/#how-to-pay"
+        className={buttonStyles({
+          variant: "secondary",
+          size: "lg",
+          className: "w-full sm:w-auto",
+        })}
+      >
+        <HandCoins className="h-5 w-5" />
+        {secondaryLabel}
+      </Link>
+    </>
   );
 }
 
