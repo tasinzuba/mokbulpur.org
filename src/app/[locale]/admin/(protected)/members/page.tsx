@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/Card";
 import { Link } from "@/i18n/navigation";
 import { buttonStyles } from "@/components/ui/button";
 import { getMembers } from "@/lib/db/members";
+import { CountryFlag } from "@/components/ui/CountryFlag";
 import type { Locale } from "@/i18n/routing";
 import { Plus, UserPlus, ArrowLeft, Pencil } from "lucide-react";
 
@@ -84,8 +85,9 @@ export default async function AdminMembersPage({
                   <div className="font-semibold text-foreground">{name}</div>
                   <div className="text-xs text-muted">{altName}</div>
                   {(m.country_flag || m.country) && (
-                    <div className="mt-1 text-xs text-muted">
-                      {m.country_flag} {m.country}
+                    <div className="mt-1 inline-flex items-center gap-1 text-xs text-muted">
+                      <CountryFlag flag={m.country_flag} alt={m.country ?? ""} />
+                      {m.country}
                     </div>
                   )}
                   {!m.active && (

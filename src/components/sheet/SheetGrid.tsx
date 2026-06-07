@@ -18,6 +18,7 @@ import type {
 } from "@/lib/supabase/types";
 import type { Locale } from "@/i18n/routing";
 import { Check, Clock, AlertCircle, Minus, X } from "lucide-react";
+import { CountryFlag } from "@/components/ui/CountryFlag";
 
 interface SheetGridProps {
   members: Member[];
@@ -149,9 +150,10 @@ export function SheetGrid({
                         <div className="text-sm font-semibold">
                           {locale === "bn" ? member.name_bn : member.name_en}
                         </div>
-                        {member.country_flag && (
-                          <div className="text-xs text-muted">
-                            {member.country_flag} {member.country}
+                        {(member.country_flag || member.country) && (
+                          <div className="inline-flex items-center gap-1 text-xs text-muted">
+                            <CountryFlag flag={member.country_flag} alt={member.country ?? ""} />
+                            {member.country}
                           </div>
                         )}
                       </div>

@@ -17,6 +17,7 @@ import {
   Plus,
   Pencil,
 } from "lucide-react";
+import { CountryFlag } from "@/components/ui/CountryFlag";
 
 const DEFAULT_SETTINGS: Settings = {
   id: 1,
@@ -421,8 +422,9 @@ function MemberCell({
       <div className="min-w-0">
         <div className="truncate font-semibold text-foreground">{name}</div>
         {member.country && (
-          <div className="truncate text-xs text-muted">
-            {member.country_flag} {member.country}
+          <div className="truncate inline-flex items-center gap-1 text-xs text-muted">
+            <CountryFlag flag={member.country_flag} alt={member.country ?? ""} />
+            {member.country}
           </div>
         )}
       </div>

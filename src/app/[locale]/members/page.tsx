@@ -2,6 +2,7 @@ import Image from "next/image";
 import { setRequestLocale, getTranslations, getLocale } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { Card } from "@/components/ui/Card";
+import { CountryFlag } from "@/components/ui/CountryFlag";
 import { getMembers } from "@/lib/db/members";
 import { getStats } from "@/lib/db/stats";
 import type { Locale } from "@/i18n/routing";
@@ -85,8 +86,9 @@ export default async function MembersPage({
                   </div>
                   <div className="text-sm text-muted">{altName}</div>
                   {(m.country_flag || m.country) && (
-                    <div className="mt-2 inline-flex items-center gap-1 rounded-full bg-muted-bg px-3 py-1 text-xs font-medium text-muted">
-                      {m.country_flag} {m.country}
+                    <div className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-muted-bg px-3 py-1 text-xs font-medium text-muted">
+                      <CountryFlag flag={m.country_flag} alt={m.country ?? ""} />
+                      {m.country}
                     </div>
                   )}
                 </div>

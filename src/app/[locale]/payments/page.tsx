@@ -5,6 +5,7 @@ import { getAllPayments, type PaymentWithRelations } from "@/lib/db/payments";
 import { formatBDT, formatDate, monthLabel } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
 import { Check, Receipt, Sparkles } from "lucide-react";
+import { CountryFlag } from "@/components/ui/CountryFlag";
 
 export default async function PaymentsPage({
   params,
@@ -161,8 +162,9 @@ function PaymentRow({
               {name}
             </div>
             {payment.member?.country && (
-              <div className="truncate text-xs text-muted">
-                {payment.member.country_flag} {payment.member.country}
+              <div className="truncate inline-flex items-center gap-1 text-xs text-muted">
+                <CountryFlag flag={payment.member.country_flag} alt={payment.member.country ?? ""} />
+                {payment.member.country}
               </div>
             )}
           </div>
@@ -252,8 +254,9 @@ function MobilePaymentCard({
               {name}
             </div>
             {payment.member?.country && (
-              <div className="truncate text-xs text-muted">
-                {payment.member.country_flag} {payment.member.country}
+              <div className="truncate inline-flex items-center gap-1 text-xs text-muted">
+                <CountryFlag flag={payment.member.country_flag} alt={payment.member.country ?? ""} />
+                {payment.member.country}
               </div>
             )}
           </div>

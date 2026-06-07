@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/Card";
 import { buttonStyles } from "@/components/ui/button";
+import { CountryFlag } from "@/components/ui/CountryFlag";
 import { getActiveMembers } from "@/lib/db/members";
 import type { Locale } from "@/i18n/routing";
 import { ArrowRight, UserPlus } from "lucide-react";
@@ -91,8 +92,9 @@ function MemberCard({
           {name}
         </div>
         {(member.country_flag || member.country) && (
-          <div className="mt-0.5 text-xs text-muted">
-            {member.country_flag} {member.country}
+          <div className="mt-0.5 inline-flex items-center gap-1 text-xs text-muted">
+            <CountryFlag flag={member.country_flag} alt={member.country ?? ""} />
+            {member.country}
           </div>
         )}
       </div>
