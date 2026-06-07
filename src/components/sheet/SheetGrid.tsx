@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useMemo, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { cn, formatBDT, monthLabel, formatDate } from "@/lib/utils";
@@ -140,11 +141,23 @@ export function SheetGrid({
                     scope="row"
                     className="sticky left-0 z-10 border-b border-r border-border bg-card px-4 py-3 text-left font-medium text-foreground group-hover:bg-muted-bg/40"
                   >
-                    <div className="flex items-center gap-2">
-                      <div className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-primary/10 text-xs font-semibold text-primary">
-                        {(locale === "bn" ? member.name_bn : member.name_en)
-                          .charAt(0)
-                          .toUpperCase()}
+                    <div className="flex items-center gap-2.5">
+                      <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-full border border-border bg-muted-bg">
+                        {member.photo_url ? (
+                          <Image
+                            src={member.photo_url}
+                            alt={locale === "bn" ? member.name_bn : member.name_en}
+                            fill
+                            sizes="36px"
+                            className="object-cover"
+                          />
+                        ) : (
+                          <div className="grid h-full w-full place-items-center bg-gradient-to-br from-[#48cae4]/15 to-[#0284c7]/10 text-xs font-semibold text-[#0284c7]">
+                            {(locale === "bn" ? member.name_bn : member.name_en)
+                              .charAt(0)
+                              .toUpperCase()}
+                          </div>
+                        )}
                       </div>
                       <div>
                         <div className="text-sm font-semibold">
