@@ -2,11 +2,15 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import {
   Users,
+  UserCheck,
   PiggyBank,
   CalendarClock,
-  AlertTriangle,
-  Receipt,
-  Eye,
+  Landmark,
+  Video,
+  HandCoins,
+  Ban,
+  HeartHandshake,
+  Scale,
   ScrollText,
 } from "lucide-react";
 
@@ -21,11 +25,15 @@ export default async function RulesPage({
 
   const sections = [
     { id: 1, Icon: Users, key: "section1" },
-    { id: 2, Icon: PiggyBank, key: "section2" },
-    { id: 3, Icon: CalendarClock, key: "section3" },
-    { id: 4, Icon: AlertTriangle, key: "section4" },
-    { id: 5, Icon: Receipt, key: "section5" },
-    { id: 6, Icon: Eye, key: "section6" },
+    { id: 2, Icon: UserCheck, key: "section2" },
+    { id: 3, Icon: PiggyBank, key: "section3" },
+    { id: 4, Icon: CalendarClock, key: "section4" },
+    { id: 5, Icon: Landmark, key: "section5" },
+    { id: 6, Icon: Video, key: "section6" },
+    { id: 7, Icon: HandCoins, key: "section7" },
+    { id: 8, Icon: Ban, key: "section8" },
+    { id: 9, Icon: HeartHandshake, key: "section9" },
+    { id: 10, Icon: Scale, key: "section10" },
   ] as const;
 
   return (

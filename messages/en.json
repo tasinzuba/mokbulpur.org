@@ -216,45 +216,79 @@
   },
   "rules": {
     "title": "Rules & Policies",
-    "subtitle": "All terms and conditions of the Makbulpur Probasi savings society.",
+    "subtitle": "The constitution and operating policies of the Mokbulpur Probasi savings society.",
     "lastUpdated": "Last updated",
-    "section1Title": "Membership",
+    "section1Title": "Management Committee",
     "section1List": [
-      "Any expatriate from Makbulpur village may become a member.",
-      "Once recorded, a member's history is preserved — accounts cannot be deleted.",
-      "Inactive members remain visible in the records for transparency."
+      "A small 3-member committee oversees the organization — President, General Secretary, and Cashier.",
+      "The President leads meetings and decision-making.",
+      "The General Secretary handles all accounts and communications.",
+      "The Cashier collects contributions and maintains the master ledger.",
+      "No decision is made individually — every decision is based on majority consensus."
     ],
-    "section2Title": "Monthly Savings",
+    "section2Title": "Membership & Discipline",
     "section2List": [
-      "The joining month requires a payment of 5,000 BDT (joining fee + first month).",
-      "Each subsequent month requires 2,000 BDT.",
-      "All members pay the same amount — no exceptions or favoritism."
+      "Any expatriate from Mokbulpur village may become a member.",
+      "Once enrolled, a member's record is preserved — accounts cannot be deleted.",
+      "Failing to pay 4 consecutive monthly installments, or breaking the rules, may lead to membership cancellation upon discussion.",
+      "Inactive or cancelled members remain visible in the records for transparency."
     ],
-    "section3Title": "Collection Window",
+    "section3Title": "Monthly Savings & Society Term",
     "section3List": [
-      "Members must pay between the 1st and 10th of every month.",
-      "After the 10th, the entry is automatically marked as late.",
-      "Two collectors — Rahat & Jubayer — receive contributions."
+      "Every member pays 2,000 BDT per month.",
+      "All members pay the same amount — no exceptions.",
+      "The society's initial term is 2 years.",
+      "After 2 years, a new term can be set by collective consent at a meeting."
     ],
-    "section4Title": "Late Payment & Fines",
+    "section4Title": "Payment Deadlines & Fines",
     "section4List": [
-      "Late payments are publicly displayed on the savings sheet with a red marker.",
-      "The fine amount per missed month will be set separately by the committee.",
-      "Payment in arrears is always welcome and recorded with the original month."
+      "Installments must be paid between the 1st and 10th of every month.",
+      "After the 10th, the same month's installment will not be accepted.",
+      "If a member is genuinely unable to pay in a given month, a one-month grace period is granted.",
+      "Within the 10th of the following month, both months' installments must be paid together — no fine.",
+      "If both months remain unpaid past the 10th of the second month, a 200 BDT fine applies per missed month."
     ],
-    "section5Title": "Expenses",
+    "section5Title": "Bank Account & Transparency",
     "section5List": [
-      "Funds are spent only on community needs — mosque, graveyard, helping the needy, infrastructure.",
-      "Major expenses require collective agreement before disbursement.",
-      "Every expense is recorded with receipts (where applicable) and visible to all."
+      "Money is not kept under any individual's name — a Joint Savings Account is opened in the organization's name.",
+      "Withdrawals require joint signatures from any 2 of the 3: President, Secretary, Cashier.",
+      "The Cashier provides a written or digital receipt for every installment received.",
+      "A master ledger holds the complete record of all transactions.",
+      "Monthly statements (total collected, expenses, bank balance) are shared with everyone via SMS or WhatsApp group.",
+      "Every transaction is also publicly visible on this website."
     ],
-    "section6Title": "Transparency",
+    "section6Title": "Meetings",
     "section6List": [
-      "Every payment, every expense, every member — all visible without login.",
-      "Only the admin can edit records; the public can verify everything in real time.",
-      "Disputes are resolved by the committee with reference to this public ledger."
+      "When meetings are called, everyone must join online.",
+      "Attendance is mandatory.",
+      "Absence without a valid reason may incur a fine, agreed upon by all."
     ],
-    "closingNote": "These rules may be revised by the committee. Any changes will be announced here and shared with all members."
+    "section7Title": "Money Refund Conditions",
+    "section7List": [
+      "If a member wants to leave before the 2-year term ends, they receive their money only when funds are distributed to everyone.",
+      "Early leavers receive only their principal — no profit share.",
+      "If the member leaves for an acceptable reason, profit sharing is decided through group discussion."
+    ],
+    "section8Title": "Loan Policy",
+    "section8List": [
+      "No loans are given from the society fund to any member or non-member.",
+      "Society money will not be used for any public-service donations.",
+      "If a member has a serious personal or social need, they may present details to the President or in the group.",
+      "After review, members may collect funds separately (outside the society fund) to help according to ability — inshallah."
+    ],
+    "section9Title": "If a Member Passes Away",
+    "section9List": [
+      "If a member dies within the 2-year term, the family decides —",
+      "If able, the family may continue the monthly installments.",
+      "Or the society may be dissolved and the saved money distributed."
+    ],
+    "section10Title": "Directors' Accountability",
+    "section10List": [
+      "If a serious complaint is raised against any committee member, the members' vote will be taken.",
+      "If the majority votes against, that person's role is revoked.",
+      "The replacement is also elected by majority vote."
+    ],
+    "closingNote": "These rules may be amended through collective decision of the committee and members. Any changes will be announced on this website and shared with all members."
   },
   "footer": {
     "tagline": "A transparent savings platform for our village expatriates. Built on trust, designed for clarity.",
