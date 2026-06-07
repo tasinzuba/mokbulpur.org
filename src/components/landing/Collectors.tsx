@@ -5,7 +5,7 @@ import { UserCircle2, Phone } from "lucide-react";
 
 const COLLECTORS = [
   { name: "Rahat", nameBn: "রাহাত", phone: "+880 1XXX XXXXXX" },
-  { name: "Jubayer", nameBn: "জুবায়ের", phone: "+880 1XXX XXXXXX" },
+  { name: "Jubayer", nameBn: "জুবায়ের", phone: "+880 1732-134482" },
 ];
 
 export async function Collectors() {

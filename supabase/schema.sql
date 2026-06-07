@@ -180,8 +180,8 @@ insert into public.settings (id) values (1) on conflict (id) do nothing;
 do $$
 begin
   if not exists (select 1 from public.collectors) then
-    insert into public.collectors (name_bn, name_en, display_order) values
-      ('রাহাত',     'Rahat',    1),
-      ('জুবায়ের', 'Jubayer', 2);
+    insert into public.collectors (name_bn, name_en, phone, display_order) values
+      ('রাহাত',     'Rahat',   null,            1),
+      ('জুবায়ের', 'Jubayer', '01732134482', 2);
   end if;
 end $$;
