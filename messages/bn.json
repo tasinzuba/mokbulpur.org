@@ -140,6 +140,22 @@
     "transactionsReceived": "প্রাপ্ত পেমেন্ট",
     "empty": "কোনো কালেক্টর পাওয়া যায়নি।"
   },
+  "adminDashboard": {
+    "memberContributionsTitle": "সদস্যদের অবদান",
+    "contributionsSubtitle": "প্রতিটি সদস্য কত টাকা সঞ্চয় করেছেন — সর্বোচ্চ থেকে নিম্ন।",
+    "colRank": "#",
+    "colMember": "সদস্য",
+    "colCountry": "দেশ",
+    "colTotalPaid": "মোট জমা",
+    "colPayments": "পেমেন্ট",
+    "colLastPaid": "শেষ পেমেন্ট",
+    "colThisMonth": "এই মাস",
+    "noPayments": "—",
+    "emptyMembers": "এখনো কোনো সদস্য নেই। সাইডবার থেকে প্রথম সদস্য যোগ করুন।",
+    "statusPaidThisMonth": "পরিশোধিত",
+    "statusPendingThisMonth": "পেন্ডিং",
+    "rankBadge": "র‍্যাঙ্ক"
+  },
   "adminSettings": {
     "title": "সংগঠনের সেটিংস",
     "subtitle": "সংগঠনের নাম, সঞ্চয়ের পরিমাণ, ও কালেকশন উইন্ডো পরিবর্তন করুন।",

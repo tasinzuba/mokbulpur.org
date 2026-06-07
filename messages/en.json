@@ -140,6 +140,22 @@
     "transactionsReceived": "Payments received",
     "empty": "No collectors found."
   },
+  "adminDashboard": {
+    "memberContributionsTitle": "Member Contributions",
+    "contributionsSubtitle": "Total saved by each member — ranked highest to lowest.",
+    "colRank": "#",
+    "colMember": "Member",
+    "colCountry": "Country",
+    "colTotalPaid": "Total Saved",
+    "colPayments": "Payments",
+    "colLastPaid": "Last Paid",
+    "colThisMonth": "This Month",
+    "noPayments": "—",
+    "emptyMembers": "No members yet. Add the first member from the sidebar.",
+    "statusPaidThisMonth": "Paid",
+    "statusPendingThisMonth": "Pending",
+    "rankBadge": "Rank"
+  },
   "adminSettings": {
     "title": "Organization Settings",
     "subtitle": "Change the org name, savings amounts, and collection window.",
