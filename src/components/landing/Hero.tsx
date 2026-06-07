@@ -33,14 +33,14 @@ export async function Hero() {
           <div className="text-center lg:text-left">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#48cae4]/30 bg-white/70 px-3 py-1 text-xs font-medium text-[#0284c7] shadow-sm backdrop-blur-md sm:px-4 sm:py-1.5 sm:text-sm">
               <Sparkles className="h-3 w-3 text-[#0284c7] sm:h-3.5 sm:w-3.5" />
-              <span>{tCommon("orgName")}</span>
+              <span>{tCommon("villageBadge")}</span>
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#48cae4] opacity-75" />
                 <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[#48cae4]" />
               </span>
             </div>
 
-            <h1 className="text-balance text-3xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
+            <h1 className="text-balance text-2xl font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl xl:text-[3.5rem]">
               <span className="text-gradient">{t("title")}</span>
             </h1>
 

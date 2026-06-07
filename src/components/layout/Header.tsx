@@ -26,6 +26,7 @@ export async function Header() {
   const isAdmin = await isCurrentUserAdmin();
   const logoSrc = getLogoSrc();
   const orgName = tCommon("orgName");
+  const orgShortName = tCommon("orgShortName");
 
   const navItems = [
     { href: "/", label: tNav("home") },
@@ -59,7 +60,7 @@ export async function Header() {
             </span>
           )}
           <span className="text-base font-bold tracking-tight text-foreground sm:text-lg">
-            {orgName}
+            {orgShortName}
           </span>
         </Link>
 

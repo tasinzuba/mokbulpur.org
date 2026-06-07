@@ -1,6 +1,8 @@
 {
   "common": {
-    "orgName": "Mokbulpur Probasi",
+    "orgName": "Purbopara - Konabari Probashi Shonchoy Shomity",
+    "orgShortName": "Probashi Shonchoy Shomity",
+    "villageBadge": "Mokbulpur",
     "tagline": "Standing with Mokbulpur expatriates, building our village",
     "language": "Language",
     "english": "English",
@@ -21,7 +23,7 @@
   },
   "landing": {
     "hero": {
-      "title": "Mokbulpur Probasi",
+      "title": "Purbopara - Konabari Probashi Shonchoy Shomity",
       "subtitle": "A transparent savings fund for our village — every taka in, every taka out, visible to all.",
       "ctaPrimary": "View Accounts",
       "ctaSecondary": "How to Save"

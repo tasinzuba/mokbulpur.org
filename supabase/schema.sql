@@ -182,6 +182,6 @@ begin
   if not exists (select 1 from public.collectors) then
     insert into public.collectors (name_bn, name_en, display_order) values
       ('রাহাত',     'Rahat',    1),
-      ('জোবায়ের', 'Jubayer', 2);
+      ('জুবায়ের', 'Jubayer', 2);
   end if;
 end $$;
